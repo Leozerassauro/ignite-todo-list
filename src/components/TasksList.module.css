@@ -1,0 +1,77 @@
+.listContent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  height: 4.5rem;
+  padding: 1rem;
+
+  background: var(--gray-400);
+
+  border: 1px solid var(--gray-500);
+  border-radius: 8px;
+
+  margin-top: 0.75rem;
+}
+
+.listContent:first-child {
+  margin-top: 1.5rem;
+}
+
+.listContent input {
+  appearance: none;
+
+
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.75rem;
+
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.listContent input:checked {
+  border: 2px solid var(--purple-dark);
+  background: var(--purple-dark);  
+}
+
+.listContent input:checked::before {
+  content: "\2714";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--gray-100);
+}
+
+.listContent span {
+  color: var(--gray-100);
+
+  font-size: 0.875rem;
+}
+
+.checked {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.listContent button {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  border: none;
+
+  background: transparent;
+  color: var(--gray-100);
+
+  cursor: pointer;
+
+  transition: color 0.1s;
+}
+
+.listContent button:hover {
+  background: var(--gray-400);
+  color: var(--danger);
+}
